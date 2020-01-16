@@ -1,7 +1,14 @@
 .jumbotron{
-    background-color: white;
+    /* background-image: url("/assets/AoT.jpeg"); */
+    position: static;
+    background-repeat: no-repeat;
+    margin: 0vw;
+    height: 100vw;
+    width: 100vw;
+    color: white;
+    background-color: black;
 }
-.header{
-    background-color: white;
-    font-size: 50%;
+
+h1{
+    text-align: center;
 }
