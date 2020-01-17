@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgbSlideEvent, NgbSlideEventSource, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
-import { url } from 'inspector';
+import { ApiService } from '../api.service';
+import { AnimeInter } from '../anime-inter';
 
 @Component({
   selector: 'app-anime',
@@ -9,9 +10,18 @@ import { url } from 'inspector';
 })
 export class AnimeComponent implements OnInit {
 
-  constructor() {}
+  constructor(private api: ApiService) {}
+
+  anime: AnimeInter[] = [];
 
   ngOnInit() {}
+
+  getAnime() {
+    this.api.getAnime()
+      .subscribe(anime => {
+        console.log(anime);
+      });
+  }
 
   isVisible= false;
   paused = false;
@@ -38,6 +48,7 @@ export class AnimeComponent implements OnInit {
       this.carousel.pause();
       this.isVisible= true;
 
+      this.getAnime();
     }
     this.paused = !this.paused;
   }
@@ -51,13 +62,6 @@ export class AnimeComponent implements OnInit {
     }
     this.random();
   }
-
-  // random(){
-  //   this.img = this.imgNames[Math.floor(Math.random() * this.images.length)];
-  // }
-  // random(){
-  //   this.img = this.images2D[Math.floor(Math.random() * this.images2D.length)];
-  // }
 
   random(){
     let randNum = [0, 1, 2, 3][Math.floor(Math.random() * 4)];

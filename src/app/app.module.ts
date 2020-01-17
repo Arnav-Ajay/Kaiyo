@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatRippleModule} from '@angular/material/core';
+import { MatRippleModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule}  from '@angular/material/card';
@@ -15,6 +15,9 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AnimeComponent } from './anime/anime.component';
+import { HttpClientModule } from "@angular/common/http";
+import { ApiService } from './api.service';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { AnimeComponent } from './anime/anime.component';
     HomeComponent,
     NavbarComponent,
     AnimeComponent
-  ], 
+    ], 
+    
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -36,9 +40,12 @@ import { AnimeComponent } from './anime/anime.component';
     BrowserAnimationsModule,
     MatButtonModule, 
     MatCheckboxModule,
-    MatRippleModule
+    MatRippleModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
