@@ -1,6 +1,12 @@
 <div class="container row">
   
-  <mat-card class="example-card col-sm-6">
+  <mat-card class="example-card col-sm-6 example-ripple-container mat-elevation-z4"
+  matRipple
+  [matRippleCentered]="centered"
+  [matRippleDisabled]="disabled"
+  [matRippleUnbounded]="unbounded"
+  [matRippleRadius]="radius"
+  [matRippleColor]="color">
    
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
@@ -18,12 +24,18 @@
   
     <mat-card-actions>
       <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-button>COMMENT</button>
     </mat-card-actions>
   
   </mat-card>
 
-  <mat-card class="example-card col-sm-6">
+  <mat-card class="example-card col-sm-6 example-ripple-container mat-elevation-z4"
+  matRipple
+  [matRippleCentered]="centered"
+  [matRippleDisabled]="disabled"
+  [matRippleUnbounded]="unbounded"
+  [matRippleRadius]="radius"
+  [matRippleColor]="color">
   
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
@@ -41,7 +53,7 @@
   
     <mat-card-actions>
       <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-button>COMMENT</button>
     </mat-card-actions>
   
   </mat-card>

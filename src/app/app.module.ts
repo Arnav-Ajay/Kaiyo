@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {MatRippleModule} from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule}  from '@angular/material/card';
@@ -13,6 +14,7 @@ import { CodesComponent } from './codes/codes.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AnimeComponent } from './anime/anime.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CodesComponent,
     ImageSliderComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    AnimeComponent
   ], 
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatCardModule,
     BrowserAnimationsModule,
     MatButtonModule, 
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
