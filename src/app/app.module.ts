@@ -14,9 +14,6 @@ import { CodesComponent } from './codes/codes.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { AnimeComponent } from './anime/anime.component';
-import { HttpClientModule } from "@angular/common/http";
-import { ApiService } from './api.service';
 
 
 @NgModule({
@@ -27,8 +24,7 @@ import { ApiService } from './api.service';
     CodesComponent,
     ImageSliderComponent,
     HomeComponent,
-    NavbarComponent,
-    AnimeComponent
+    NavbarComponent
     ], 
     
   imports: [
@@ -40,12 +36,9 @@ import { ApiService } from './api.service';
     BrowserAnimationsModule,
     MatButtonModule, 
     MatCheckboxModule,
-    MatRippleModule,
-    HttpClientModule
+    MatRippleModule
   ],
-  providers: [
-    ApiService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
