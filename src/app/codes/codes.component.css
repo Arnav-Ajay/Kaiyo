@@ -1,45 +1,38 @@
-.example-ripple-container {
-  cursor: pointer;
-  text-align: center;
-
-  /* width: 300px;
-  height: 300px;
-  line-height: 300px; */
-
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-
-  -webkit-user-drag: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
 .example-card {
-  max-width: 45%;
-  box-shadow: white;
   color: white;
-}
-
-.example-header-image {
-background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-background-size: cover;
-}
-mat-card-subtitle{
-color: white;
+  margin-bottom: 0;
 }
 
 mat-card {
-margin: 10px;
-background-color: black;
+  margin: 10px;
+  background-color: black;
+  text-align: center;
 }
 
 mat-card:hover{
-background-color: grey;
-color: black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+mat-card-header{
+  justify-content: center;
+}
+
+button{
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-style: solid;
+  
 }
 
 button:hover{
-background-color: black;
-color: white;
+  background-color: black;
+  color: white;
+}
+
+button:focus {
+  outline: none;
+  border: 0;
 }
