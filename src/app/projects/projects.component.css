@@ -1,0 +1,38 @@
+.example-card {
+    color: white;
+    margin-bottom: 0;
+  }
+  
+  mat-card {
+    margin: 10px;
+    background-color: black;
+    text-align: center;
+  }
+  
+  mat-card:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+  }
+  
+  mat-card-header{
+    justify-content: center;
+  }
+  
+  button{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-style: solid;
+  }
+  
+  button:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  button:focus {
+    outline: none;
+    border: 0;
+  }
+  

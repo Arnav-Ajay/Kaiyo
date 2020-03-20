@@ -1,11 +1,23 @@
-<div class="container-fluid back-ground">    
-    
+<div style="background-color: grey;">    
+    <p>Introduction</p>
     <app-header></app-header>
-    
+
+</div>
+<div style="background-color: black;">    
+    <p>Projects</p>
     <app-home></app-home>
 
-    <app-codes></app-codes>
+</div>
 
-    <app-graphics></app-graphics>
+<div style="background-color: grey;">
+    <app-projects></app-projects>
+    <!-- <app-codes></app-codes>
 
+    <app-graphics></app-graphics> -->
+</div>
+
+<router-outlet></router-outlet>
+
+<div style="background-color: blue;">
+    <app-footer></app-footer>
 </div>

@@ -7,7 +7,6 @@
     margin: 0vw;
     width: 100vw;
     color: white;
-    background-color: black;
 }
 
 h1{
@@ -26,8 +25,7 @@ h1{
     left: 0;
     right: 0;        
     text-align: center;
-    top: 10%; /* Adjust this value to move the positioned div up and down */
-    background: rgba(0, 0, 0, 0.8);
+    top: 33%; /* Adjust this value to move the positioned div up and down */
     font-family: Arial,sans-serif;
     color: #fff;
     width: 60%; /* Set the width of the positioned div */

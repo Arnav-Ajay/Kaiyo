@@ -13,6 +13,8 @@ import { CodesComponent } from './codes/codes.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { DetailsComponent } from './details/details.component';
     CodesComponent,
     ImageSliderComponent,
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    FooterComponent,
+    ProjectsComponent
     ], 
     
   imports: [
