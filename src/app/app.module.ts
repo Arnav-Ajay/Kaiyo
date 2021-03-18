@@ -8,11 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { GraphicsComponent } from './graphics/graphics.component';
-import { CodesComponent } from './codes/codes.component';
-import { ImageSliderComponent } from './image-slider/image-slider.component';
-import { HomeComponent } from './home/home.component';
-import { DetailsComponent } from './details/details.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,11 +16,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HeaderComponent,
-    GraphicsComponent,
-    CodesComponent,
-    ImageSliderComponent,
-    HomeComponent,
-    DetailsComponent,
     FooterComponent,
     ProjectsComponent
     ], 
