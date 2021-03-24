@@ -1,32 +1,5 @@
-.jumbotro{
-    /* background-image: url("/assets/AoT.jpeg"); */
-    /* object-fit: cover;
-    vertical-align: bottom; */
-    position: static;
-    background-repeat: no-repeat;
-    margin: 0vw;
-    width: 100vw;
-    color: white;
-}
-
-h1{
+.text{
     text-align: center;
-}
-
-.box{
-    position: relative;
-    display: inline-block; /* Make the width of box same as image */
-}
-.box .text{
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    object-fit: cover;
-    left: 0;
-    right: 0;        
-    text-align: center;
-    top: 33%; /* Adjust this value to move the positioned div up and down */
-    font-family: Arial,sans-serif;
+    font-family: 'Gill Sans';
     color: #fff;
-    width: 60%; /* Set the width of the positioned div */
 }

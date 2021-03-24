@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceApiService } from '../service-api.service';
+import {MatDialog} from '@angular/material/dialog';
+import { ViewProjectComponent } from '../view-project/view-project.component';
+
 
 @Component({
   selector: 'app-projects',
@@ -9,27 +12,14 @@ import { ServiceApiService } from '../service-api.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  // constructor() {}
-  constructor(private api:ServiceApiService) {
+  constructor(private api:ServiceApiService, public dialog: MatDialog) {
     this.getProjects();
   }
 
   button_text = 'View Project'
 
-  projects = [
-    // {
-    //   title: 'AI Projects',
-    //   description: 'NLP, ML, DL, ANN, SR, CV',
-    //   img: '/assets/opm.jpg'
-    // },
-    // {
-    //   title: 'Other Projects',
-    //   description: 'Angular, ffmpeg, android',
-    //   img: '/assets/opm.jpg'
-    // },
-
-  ];
-
+  projects = [];
+  
   getProjects = () => {
     this.api.getAllProjects().subscribe(
       data => {
@@ -39,6 +29,24 @@ export class ProjectsComponent implements OnInit {
         console.log(error);
       })
   }
+
+  public gitOpen(url : string) {
+    window.open(url, "_blank");
+    console.log(url)
+  }
+
+  public projOpen(proj : object) {
+    const dialogRef = this.dialog.open(ViewProjectComponent, {
+      backdropClass: 'custom-dialog-backdrop-class',
+      panelClass: 'custom-dialog-panel-class',
+      data: { pageValue: proj }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed', result);
+    });
+  }
+  
 
   ngOnInit() {}
 

@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>{{ project.projectName}}</h2>
+<mat-dialog-content class="mat-typography">
+    <div>
+        <img [src]="project.projectPhoto" alt="Photo">
+    </div>
+
+    <p><b>About : </b>{{ project.projectDesc}}<br>
+        <b>Tools and Libraries : </b>{{ project.projectTech}}<br></p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-raised-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
